@@ -69,7 +69,7 @@ object TryExercises {
     * Hint: Solve it without using pattern matching
     */
 
-  def increment(str: String): Try[Int] = ???
+  def increment(str: String): Try[Int] = Try(str.toInt).map(_ + 1)
 
   /**
     * Remember that `Try[A]` ~ `Either[Throwable, A]`

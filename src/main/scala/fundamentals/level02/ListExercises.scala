@@ -138,8 +138,8 @@ object ListExercises {
     * scala> product(Nil)
     * = 1
     *
-    * Hint: Use pattern matching and .foldLeft
-    **/
+    * Hint: Use .foldLeft
+    */
   def product(nums: List[Int]): Int = nums.foldLeft(1)(_ * _)
 
   /**

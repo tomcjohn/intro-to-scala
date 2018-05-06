@@ -17,7 +17,7 @@ object TypesExercises {
   case class Person(name: String, age: Int)
 
   /**
-    * case classes instances are immutable!
+    * case class instances are immutable!
     *
     * scala> val person = Person(name = "John Kane", age = 35)
     *
@@ -25,7 +25,7 @@ object TypesExercises {
     * <console>:18: error: reassignment to val
     * person.age = 25
     *
-    * Notice as well how there is no need for using the `new` clause
+    * Notice as well how there is no need for using the `new` operator
     */
   val person = Person(name = "John Kane", age = 35)
 
@@ -179,18 +179,6 @@ object TypesExercises {
     * What happens when you try to compile now?
     *
     * Don't forget to fill in the unit test for this new scenario: "showTrafficLight should show Flashing"
-    */
-
-  /**
-    * Bonus: How would you create an ADT that represents the commands from our Toy Robot code test?
-    *
-    * As a refresher, the possible commands are:
-    *
-    * PLACE X,Y,DIR (where X and Y are Ints and DIR is one of NORTH, SOUTH, EAST and WEST)
-    * MOVE
-    * LEFT
-    * RIGHT
-    * REPORT
     */
 
 }

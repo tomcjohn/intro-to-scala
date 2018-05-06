@@ -55,7 +55,7 @@ object Exceptions2EitherExercises {
     * = Left(EmptyName(provided name is empty))
     **/
   def getName(providedName: String): Either[AppError, String] =
-    if (providedName.trim.isEmpty) Left(EmptyName("provided name is empty"))
+    if (providedName.isEmpty) Left(EmptyName("provided name is empty"))
     else Right(providedName)
 
   /**

@@ -45,7 +45,7 @@ object ExceptionExercises {
     * Hint: use the isEmpty method on String
     */
   def getName(providedName: String): String =
-    if (providedName.trim.isEmpty) throw new EmptyNameException("provided name is empty")
+    if (providedName.isEmpty) throw new EmptyNameException("provided name is empty")
     else providedName
 
   /**

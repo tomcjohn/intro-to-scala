@@ -117,8 +117,7 @@ object OptionExercises1 {
     * Hint: Don't forget every if needs an else!
     **/
   def mkPerson(name: String, age: Int): Option[Person] =
-    if (name.isEmpty) None
-    else if (age < 0) None
+    if (name.isEmpty || (age < 0)) None
     else Some(Person(name, age))
 
   /**

@@ -30,7 +30,7 @@ object NullExercises {
     * = null
     **/
   def mkTrafficLightOrNull(str: String): TrafficLight =
-    str.trim() match {
+    str match {
       case "red" => Red
       case "yellow" => Yellow
       case "green" => Green
@@ -80,8 +80,7 @@ object NullExercises {
     * = null
     **/
   def mkPersonOrNull(name: String, age: Int): Person =
-    if (name.isEmpty) null
-    else if (age < 0) null
+    if (name.isEmpty || age < 0) null
     else Person(name, age)
 
   /**
